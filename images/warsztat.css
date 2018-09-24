@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Bold.eot');
+    src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/raleway/subset-Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Bold.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Regular.eot');
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/raleway/subset-Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Regular.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Light.eot');
+    src: local('Raleway Light'), local('Raleway-Light'),
+    url('../fonts/raleway/subset-Raleway-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Light.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Light.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Italic.eot');
+    src: local('Raleway Italic'), local('Raleway-Italic'),
+    url('../fonts/raleway/subset-Raleway-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Italic.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Italic.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    }
+.container {
+    width: 100%;
+    max-width: ;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+

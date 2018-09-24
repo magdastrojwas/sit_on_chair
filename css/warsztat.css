@@ -1,0 +1,716 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Bold.eot');
+    src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/raleway/subset-Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Bold.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Regular.eot');
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/raleway/subset-Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Regular.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Light.eot');
+    src: local('Raleway Light'), local('Raleway-Light'),
+    url('../fonts/raleway/subset-Raleway-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Light.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Light.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/subset-Raleway-Italic.eot');
+    src: local('Raleway Italic'), local('Raleway-Italic'),
+    url('../fonts/raleway/subset-Raleway-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/subset-Raleway-Italic.woff2') format('woff2'),
+    url('../fonts/raleway/subset-Raleway-Italic.woff') format('woff'),
+    url('../fonts/raleway/subset-Raleway-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Raleway, Arial, sans-serif;
+    }
+
+.container {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+.col {
+    float: left;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.underline {
+    background-color: mediumaquamarine;
+    height: 8px;
+    width: 193px;
+    margin-left: 15px;
+}
+
+section {
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+header p {
+    font-size: 22px;
+    color: white;
+    float:left;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+}
+header span {
+    color: aquamarine;
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 60px;
+}
+header nav {
+    float:right;
+    padding: 18px;
+}
+header nav li {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 22px;
+    position: relative;
+}
+header a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*DROP-DOWN MENU*/
+/* Dropdown Content (Hidden by Default) */
+.menu-down {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.menu-down li {
+    display: block;
+    background: black;
+    color: white;
+    padding: 5px 20px;
+}
+/* Show the dropdown menu on hover */
+nav li:hover .menu-down {
+    display: block;
+}
+
+/*SECTION1*/
+.slider {
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);;
+}
+div.chairSlider ul {
+    width: 50%;
+    height: 650px;
+    background: url("../images/black_chair.png") no-repeat center/cover;
+    float:left;
+    margin-top: 70px;
+    position: relative;
+}
+.chairSlider ul {
+    list-style: none;
+}
+
+.chairSlider li {
+    display: none;
+}
+
+.chairSlider .visible {
+    display: inline-block;
+}
+#prevImg {
+    color:mediumaquamarine;
+    font-size: 100px;
+    position: absolute;
+    top: 380px;
+}
+article.main {
+    width:50%;
+    height:100%;
+    float: right;
+    margin-top: 100px;
+    position: relative;
+}
+#nextImg {
+    color:mediumaquamarine;
+    font-size: 100px;
+    position: absolute;
+    top: 380px;
+    left: 1700px;
+}
+h1 {
+    font-size: 62px;
+    color: black;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+h1 span {
+    color:mediumaquamarine;
+}
+
+article.main p {
+    font-size: 25px;
+    color: lightslategray;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px 60px;
+    }
+div.more {
+    width: 380px;
+    height: 80px;
+    background-color: mediumaquamarine;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+div.more a {
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/*SECTION2*/
+#products {
+    height: 351px;
+    padding: 35px;
+}
+
+section#products .col {
+    width: 25%;
+    margin: 0 4% 0 4%;
+    display: block;
+    position: relative;
+}
+
+#products .box {
+    height:257px;
+}
+
+.photo1 {
+    background: url("../images/box1_img.jpg") no-repeat center / cover;
+}
+.photo2 {
+    background: url("../images/box2_img.jpg") no-repeat center/cover;
+}
+
+#products .box+div{
+    height: 85px;
+    width: 100%;
+    background-color: rgba(255,255, 255, .4);
+    position:absolute;
+    top: 150px;
+}
+
+#products .col p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0 0 16px;
+
+    letter-spacing: 2px;
+
+}
+
+#products .col:last-child {
+    border: 1px solid darkgrey;
+    padding: 14px 5px 0 3px;
+}
+
+#products .col:last-child p:last-of-type {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    color: lightslategray;
+}
+
+
+/*SECTION3*/
+
+#price_list {
+    background-color: rgba(128, 128, 128, .1);
+    height: 700px;
+    padding: 50px;
+}
+
+#price_list .clearfix, #contact .clearfix {
+    clear: both;
+}
+
+#price_list h2, #contact h2 {
+    color: lightslategray;
+    font-size: 32px;
+    padding: 14px 0 2px 50px;
+}
+
+#price_list .underline, #contact .underline {
+    margin-left: 50px;
+    width: 400px;
+    margin-bottom: 40px;
+    padding:0;
+}
+
+#price_list .clearfix:nth-of-type(2) .col {
+    width:31%;
+    border:2px solid darkgrey;
+    margin: 37px -20px 65px 48px;
+    padding: 7px 10px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+#price_list .clearfix:nth-of-type(2) .col:nth-of-type(2) {
+    background-color: mediumaquamarine;
+    border-color: mediumaquamarine;
+}
+
+#price_list .col .circle {
+    width: 50px;
+    height: 50px;
+    background: lightgrey;
+    border-radius: 50%;
+    border:12.5px solid white;
+    box-shadow: 0 0 0 2px darkgrey;
+    position: absolute;
+    top: -34px;
+    left:calc(50% - 25px);
+}
+#price_list .col:nth-child(2) .circle {
+    background: whitesmoke;
+    border-color: mediumaquamarine;
+    box-shadow: 0 0 0 2px mediumaquamarine;
+}
+
+#price_list .clearfix:nth-child(2) h3 {
+    margin-top:18px;
+    text-align: center;
+    color: mediumaquamarine;
+}
+
+#price_list .col:nth-child(2) h3 {
+    color:white;
+}
+
+#price_list .inner_circle {
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    border: 2px solid darkgrey;
+    border-radius: 50%;
+    position:relative;
+    left: calc(50% - 64px);
+    margin-top: 28px;
+}
+
+#price_list .inner_circle p:first-of-type {
+    font-size: 45px;
+    font-weight: 700;
+    width: 70px;
+    margin: 25px 0 0 23px;
+    position: relative;
+}
+
+#price_list .inner_circle span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#price_list .inner_circle p:first-child span {
+    position: absolute;
+    top:1px;
+    right: -11px;
+}
+#price_list .inner_circle p:last-child span {
+    position: absolute;
+    bottom: 29px;
+    right: 25px;
+}
+
+#price_list .col:last-child p:first-of-type {
+    margin-left: 15px;
+}
+
+#price_list .col:last-child p:first-of-type span {
+    right: -19px;
+}
+
+#price_list .col:nth-child(2) .inner_circle * {
+    color:mediumaquamarine;
+}
+
+#price_list ul {
+    height: 138px;
+    margin: 30px -20px 63px 0;
+    position: relative;
+    left: -10px;
+    background-color: white;
+}
+
+#price_list li {
+    background-color: lightgrey;
+    width: 100%;
+    height: 46px;
+    padding-top: 8px;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+#price_list li:nth-child(2n+2) {
+    background-color: rgba(128, 128, 128, .1);
+}
+
+#price_list a {
+    background-color: mediumaquamarine;
+    width: 122px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 7px;
+    margin: 3px 0 13px 0;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#price_list .col:nth-child(2) a {
+    background-color: white;
+    color: mediumaquamarine;
+}
+
+/*SECTION4*/
+
+#contact .clearfix:nth-child(2) .col:first-child {
+    width: 700px;
+}
+
+#contact .clearfix:nth-child(2) .col:last-child {
+    width: 400px;
+}
+
+#contact input[type="text"], input[type="email"], textarea{
+    width:635px;
+    height: 67px;
+    border:2px solid mediumaquamarine;
+    margin: 0 0 22px 55px;
+}
+
+textarea {
+    height: 190px;
+    resize: none;
+    padding-top: 16px;
+    overflow: hidden;
+}
+
+#contact input[placeholder], textarea[placeholder] {
+    font-size: 36px;
+    padding-left: 13px;
+}
+
+.red_chair {
+    background: url("../images/red_chair.png") no-repeat center/contain;
+    height: 207px;
+    margin-right: 10px;
+    margin-top: -30px;
+}
+ .checkbox_container p{
+     position: absolute;
+     top:13px;
+     left: 109px;
+     width: 300px;
+ }
+
+ #contact .col:nth-child(2) form>label{
+     font-size: 21px;
+     position: relative;
+     cursor: pointer;
+     margin: 15px 0 0 15px;
+ }
+ /*CHECKBOX*/
+
+/*hide default checkbox*/
+#contact .checkbox_container input {
+    position: absolute;
+    top: 9px;
+    left: 44px;
+    width: 50px;
+    height: 50px;
+}
+/*custom checkbox*/
+
+#contact .checkmark {
+    position: absolute;
+    top:-16px;
+    left: 44px;
+    height:50px;
+    width: 50px;
+    background-color: white;
+    border: 2px solid mediumaquamarine;
+}
+/*create the checkmark/inidicator (hidden when not checked)*/
+#contact .checkmark:after {
+    content:'';
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+#contact .container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/*style the checkmark*/
+#contact .checkbox_container .checkmark:after {
+    left: 14px;
+    top: -1px;
+    width: 12px;
+    height: 26px;
+    border: solid mediumaquamarine;
+    border-width: 0 7px 7px 0;
+    transform: rotate(45deg);
+}
+
+#contact input[type='submit'] {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    background-color: mediumaquamarine;
+    width: 342px;
+    height: 73px;
+    border:none;
+    color: white;
+    border-radius: 10px;
+    font-size: 34px;
+}
+
+footer {
+    height:150px;
+    padding-top: 60px;
+    color: dimgray;
+}
+
+footer p {
+    padding: 13px 0 0 50px;
+    font-size: 16px;
+}
+
+footer .col:first-of-type {
+    width: 70%;
+}
+
+footer .col:last-of-type {
+    width: 30%;
+}
+footer .col>div {
+    display: inline-block;
+}
+
+#flickr {
+    background: url("../images/flickr.png")no-repeat center/cover;
+    height: 45px;
+    width: 45px;
+}
+#vimeo{
+    background: url("../images/vimeo.png") no-repeat center /cover;
+    height:45px;
+    width: 45px;
+}
+#pinterest{
+    background: url("../images/pinterest.png") no-repeat center /cover;
+    height: 45px;
+    width: 45px;
+}
+#twitter{
+    background: url("../images/twitter.png") no-repeat center /cover;
+    height: 45px;
+    width: 45px;
+}
+
+footer .col:last-of-type div:last-child{
+    font-size: 21px;
+    position: relative;
+    top: -6px;
+    left: 62px;
+    padding-left: 60px;
+}
+
+footer .col:last-of-type div:last-child span{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
